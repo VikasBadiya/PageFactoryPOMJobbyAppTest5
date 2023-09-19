@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test  name="PageFactoryPOMJobbyAppTest5" parallel="classes" thread-count="2">
+        <classes>
+            <class name="TestScenarios.HeaderSectionTest">
+                <methods>
+                    <include name="HeaderSectionAppLogoImage" />
+                    <include name="ClickOnNavbarJobsLink" />
+                    <include name="ClickOnAppLogo" />
+                    <include name="ClickOnNavbarHome" />
+                    <include name="ClickOnLogout" />
+                </methods>
+            </class>
+            <class name="TestScenarios.HomePageTest">
+                <methods>
+                    <include name="HomePageHeadingText" />
+                    <include name="ClickOnFindJobFunctionality" />
+                </methods>
+            </class>
+            <class name="TestScenarios.JobsPageTest">
+                <methods>
+                    <include name="ProfileContainerUI" />
+                    <include name="SuccessfulSearch" />
+                    <include name="UnsuccessfulSearch" />
+                </methods>
+            </class>
+            <class name="TestScenarios.LoginPageTest">
+                <methods>
+                    <include name="TestLoginPageUI" />
+                    <include name="TestSubmissionWithEmptyInput" />
+                    <include name="TestSubmissionWithEmptyUsername" />
+                    <include name="TestSubmissionWithEmptyPassword" />
+                    <include name="TestSubmissionWithInvalidPassword" />
+                    <include name="TestSuccessfulLogin" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
